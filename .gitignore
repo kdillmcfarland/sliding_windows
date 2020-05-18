@@ -1,2 +1,3 @@
 # MAC 
 *.DS_Store
+.Rhistory
