@@ -5,7 +5,9 @@ Bash script to create sliding windows from fasta files
 
 The basic syntax of the script is as follows. **Be sure to change the `.sh` file name to the most recent version number.**
 
-`bash fasta_windows_v1.1.sh <fasta> <window size> <slide size>`
+```
+bash fasta_windows_v1.1.sh <fasta> <window size> <slide size>
+```
 
 where the input fasta file is formatted with 1 line starting with `>` for each name and 1 line for each sequence. The window size is the length of desired window sequences in bp, and the slide size is the length to slide each window over in bp. Alignment formating `-` will be automatically removed.
 
@@ -20,7 +22,9 @@ UCACGUUGACAUCGAGGAAGACAGCCCAUUCCUCAGAGCUUUGCAGCGGAGCUUCCCGCAGUUUGAGGUAGAAGC
 
 If you have multiple fastas, you can concatenate them together with the following. The `*` is a wildcard that stands for any character of any length, so the following captures all `.fasta` files in the directory specificed.
 
-`cat folder_with_fastas/*.fasta >> all.sequences.fasta`
+```
+cat folder_with_fastas/*.fasta >> all.sequences.fasta
+```
 
 Then run your sequences! Here is an example process if you place your files on your computer's desktop. Results will be saved to your desktop.
 
